@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+.topPage {
+  min-height: 93vh;
+  padding-top: 30px;
+  overflow-x: scroll;
+}
+.topPage .listWrapper {
+  display: flex;
+  height: 100%;
+  align-items: baseline;
+  width: 100%;
+  margin: 0 auto;
+  /*中央寄せ*/
+  position: relative;
+}
+.topPage .listWrapper .list {
+  position: relative;
+  background: #e2e4e6;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+  min-width: 320px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+.topPage .listWrapper .list:last-child {
+  margin-right: 20px;
+}
+.topPage .listWrapper .list_header {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topPage .listWrapper .list_header_title {
+  font-size: 20px;
+  margin: 0;
+}
+.topPage .listWrapper .list_header_action .fa-trash {
+  margin-right: 10px;
+}
+.topPage .listWrapper .list_header_action .fa-pen, .topPage .listWrapper .list_header_action .fa-trash {
+  font-size: 18px;
+  color: #8c8c8c;
+}
+.topPage .listWrapper .list .cardWrapper {
+  border-radius: 8px;
+  overflow-y: scroll;
+  max-height: 76vh;
+}
+.topPage .listWrapper .list .cardWrapper .cardDetail_link {
+  text-decoration: none;
+  color: #323232;
+}
+.topPage .listWrapper .list .cardWrapper .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.topPage .listWrapper .list .cardWrapper .card_title {
+  margin-block-start: 0em;
+  font-size: 17px;
+}
+.topPage .listWrapper .list .cardWrapper .card_detail {
+  display: none;
+}
+.topPage .listWrapper .list .cardWrapper .card_detail.is-exist {
+  display: block;
+  color: #999;
+}
+.topPage .listWrapper .list .cardWrapper .card_detail.is-exist > i {
+  display: block;
+}
+.topPage .listWrapper .list .cardWrapper .addCard {
+  color: #8c8c8c;
+}
+.topPage .listWrapper .list .cardWrapper .addCard_link {
+  color: #8c8c8c;
+}
+.signUp {
+  margin-top: 10vh;
+}
+.signUp .title {
+  margin: 0;
+}
+body {
+  background: url('http://farm3.staticflickr.com/2832/12303719364_c25cecdc28_b.jpg') fixed;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+input::placeholder {
+  color: white;
+}
+input:-ms-input-placeholder {
+  color: white;
+}
+input::-ms-input-placeholder {
+  color: white;
+}
+p.form-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  margin-top: 1%;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+p.form-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  margin-top: 5%;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+form {
+  width: 250px;
+  margin: 0 auto;
+}
+form.login input[type="text"], form.login input[type="password"] {
+  width: 100%;
+  margin: 0;
+  padding: 5px 10px;
+  background: 0;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  outline: 0;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  color: #fff;
+  outline: 0;
+}
+form.login input[type="submit"] {
+  width: 100%;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 16px;
+  outline: 0;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+form.login label, form.login a {
+  font-weight: 400;
+  color: #fff;
+}
+form.login .btn-sm:hover {
+  background-color: #fff;
+  color: #6f8b90;
+}
+form.login .btn-login {
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.5s;
+}
+form.login .btn-login:hover {
+  background-color: #fff;
+  text-decoration: none;
+}
+.signIn {
+  margin-top: 10vh;
+}
+.signIn .title {
+  margin: 0;
+}
+body {
+  background: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg') fixed;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+.wrap {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+input::placeholder {
+  color: white;
+}
+input:-ms-input-placeholder {
+  color: white;
+}
+input::-ms-input-placeholder {
+  color: white;
+}
+p.form-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  margin-top: 5%;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+p.form-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  margin-top: 5%;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+form {
+  width: 250px;
+  margin: 0 auto;
+}
+form.login input[type="text"], form.login input[type="password"] {
+  width: 100%;
+  margin: 0;
+  padding: 5px 10px;
+  background: 0;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  outline: 0;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  color: #fff;
+  outline: 0;
+}
+form.login input[type="submit"] {
+  width: 100%;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 16px;
+  outline: 0;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+form.login input[type="submit"]:hover {
+  transition: background-color 0.5s ease;
+}
+form.login .remember-forgot {
+  float: left;
+  width: 100%;
+  margin: 10px 0 0 0;
+}
+form.login .forgot-pass-content {
+  min-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+form.login label, form.login a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}
+.btn-login {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 16px;
+  outline: 0;
+  cursor: pointer;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+.make-account {
+  width: 100%;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 16px;
+  outline: 0;
+  cursor: pointer;
+  letter-spacing: 1px;
+  display: inline-block;
+  background-color: red;
+  padding: 5px 0px;
+  border-radius: 2px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+.make-account:hover {
+  text-decoration: none;
+  background-color: #fff;
+  color: #6f8b90;
+}
+.listnewPage .new_list {
+  max-width: 500px;
+  margin: 100px auto 0;
+}
+.listnewPage .new_list .error_title {
+  color: #e40909;
+}
+.control-label {
+  color: #fff;
+  font-size: 16px;
+}
+.header {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+}
+.header #toggle-menu {
+  display: none;
+}
+.header .nav .header_menu {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav .header_menu .nav-link {
+  font-size: 16px;
+}
+.header .nav .header_menu li {
+  list-style: none;
+  color: #fff;
+}
+.header .nav .header_menu li a {
+  color: #fff;
+}
+.header .nav .header_menu_title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+}
+.header .nav .header_menu_inner {
+  display: flex;
+  padding: 0;
+  align-items: center;
+}
+.header .nav .header_menu_inner .listNew:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f044";
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 18px;
+}
+.header .nav .header_menu_inner .logOut:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f52b";
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 18px;
+}
+.mes {
+  position: relative;
+}
+.mes span.remark {
+  display: none;
+}
+.mes a:hover span.remark {
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #000;
+  display: block;
+  line-height: 1.2em;
+  margin: 0.5em;
+  padding: 0.5em;
+  position: absolute;
+  top: 18px;
+  right: 30px;
+  width: 12em;
+  text-align: center;
+}
+.listeditPage .listForm {
+  max-width: 500px;
+  margin: 100px auto 0;
+}
+.carddetailPage {
+  color: #fff;
+  max-width: 800px;
+  padding: 30px 20px;
+  margin: 0 auto;
+}
+.carddetailPage .container {
+  width: 100%;
+  background-color: #7d807c opacity 0.8;
+  border-radius: 4px;
+}
+.carddetailPage .container .cardContents {
+  width: 100%;
+}
+.carddetailPage .container .cardContents_title, .carddetailPage .container .cardContents_memo, .carddetailPage .container .cardContents_liststatus {
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.carddetailPage .container .cardContents .each-line-title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  padding: 4px 0px;
+  border-bottom: solid 3px #fff;
+  width: 150px;
+}
+.carddetailPage .container .cardContents .delete_btn {
+  margin-top: 20px;
+  background-color: #df164a;
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 7px;
+  border-radius: 10px;
+  color: #fff;
+  transition: opacity 0.5s;
+  text-decoration: none;
+}
+.carddetailPage .container .cardContents .delete_btn:hover {
+  opacity: 0.7;
+}
+.carddetailPage .container .cardContents_btnArea {
+  margin-top: 40px;
+  text-align: center;
+}
+.carddetailPage .container .cardContents_btnArea > a {
+  display: block;
+}
+.carddetailPage .container .cardContents_btnArea > a.edit_btn {
+  max-width: 200px;
+  margin: 0 auto;
+  background: #026aa7;
+  padding: 7px;
+  border-radius: 10px;
+  color: #fff;
+  transition: opacity 0.5s;
+  text-decoration: none;
+}
+.carddetailPage .container .cardContents_btnArea > a.edit_btn:hover {
+  opacity: 0.7;
+}
+.carddetailPage .container .cardContents .each-contents {
+  font-size: 20px;
+  padding: 7px 0px;
+  text-align: center;
+}
+.cardnewPgae .cardnewForm {
+  max-width: 500px;
+  margin: 70px auto 0;
+}
+.cardnewPgae .cardnewForm_title {
+  margin-bottom: 30px;
+}
+.cardeditPgae .cardeditForm {
+  max-width: 500px;
+  margin: 70px auto 0;
+}
+.cardeditPgae .cardeditForm_title, .cardeditPgae .cardeditForm_memo {
+  margin-bottom: 30px;
+  color: #fff;
+}
+.submitBtn {
+  background: #29b744;
+  color: #fff;
+  width: 200px;
+  margin: 20px 0 20px;
+  padding: 10px;
+  border-radius: 90px;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+.submitBtn:hover {
+  opacity: 0.6;
+}

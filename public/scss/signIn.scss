@@ -1,0 +1,168 @@
+.signIn{
+    margin-top: 10vh;
+    .title{
+        margin:0;
+    }
+    
+}
+
+body
+{
+    background: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg') fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.wrap
+{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+@mixin placeholder($color){
+    
+    &::placeholder{
+        color: $color;
+    }
+    
+    &:-ms-input-placeholder{
+        color: $color;
+    }
+    
+    &::-ms-input-placeholder{
+        color: $color;
+    }
+}
+
+input{
+        @include placeholder(white);
+    }
+
+p.form-title
+{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 5%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+p.form-subtitle
+{
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 5%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+form
+{
+    width: 250px;
+    margin: 0 auto;
+    
+}
+
+form.login input[type="text"], form.login input[type="password"]
+{
+    width: 100%;
+    margin: 0;
+    padding: 5px 10px;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    outline: 0;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    outline: 0;
+}
+
+form.login input[type="submit"]
+{
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 16px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+    &:hover{
+       transition: background-color 0.5s ease;
+    }
+}
+
+    
+form.login{
+    .remember-forgot{
+    float: left;
+    width: 100%;
+    margin: 10px 0 0 0;
+    }
+    
+    .forgot-pass-content{
+    min-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    
+    label, a{
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+    }
+    
+    
+}
+
+
+.btn-login{
+    width: 100%;
+    text-transform: uppercase;
+    text-align:center;
+    font-weight: 500;
+    margin-top: 16px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+    display:inline-block;
+}
+
+.make-account{
+    width: 100%;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align:center;
+    margin-top: 16px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+    display:inline-block;
+    background-color: red;
+    padding: 5px 0px;
+    border-radius: 2px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color .5s;
+    &:hover{
+        text-decoration: none;
+        background-color: #fff;
+        color: #6f8b90;
+    }
+}

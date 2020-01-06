@@ -1,0 +1,70 @@
+.carddetailPage{
+    color: #FFF;
+    max-width: 800px;
+    padding: 30px 20px;
+    margin: 0 auto;
+    .container{
+      width: 100%;
+      background-color: #7d807c opacity 0.8;
+      border-radius: 4px;
+      
+      .cardContents{
+        width: 100%;
+        &_title,&_memo,&_liststatus{
+                margin: 0 auto;
+                padding: 10px 0;
+        }
+        .each-line-title{
+          margin: 0 auto;
+          text-align: center;
+          font-size: 16px;
+          padding: 4px 0px;
+          border-bottom: solid 3px #FFF;
+          width: 150px;
+            }
+        .delete_btn {
+          margin-top: 20px;
+          background-color: #df164a;
+          max-width: 200px;
+          margin: 10px auto;
+          padding: 7px;
+          border-radius: 10px;
+          color: #FFF;
+          transition: opacity .5s;
+          text-decoration: none;
+          &:hover{
+            opacity: .7;
+          }
+        }
+        &_btnArea {
+            margin-top: 40px;
+            text-align: center;
+              & > a {
+              display: block;
+                &.edit_btn {
+                max-width: 200px;
+                margin: 0 auto;
+                background: #026aa7;
+                padding: 7px;
+                border-radius: 10px;
+                color: #fff;
+                transition: opacity .5s;
+                text-decoration: none;
+                  &:hover {
+                    opacity: .7;
+                  }
+                }
+              }
+            }
+        .each-contents{
+          font-size: 20px;
+          padding: 7px 0px;
+          text-align: center;
+        }
+      }
+    }
+}
+
+
+
+        

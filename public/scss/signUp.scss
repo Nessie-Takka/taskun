@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+.signUp{
+    margin-top: 10vh;
+    .title{
+        margin:0;
+    }
+    
+}
+
+body
+{
+    background: url('http://farm3.staticflickr.com/2832/12303719364_c25cecdc28_b.jpg') fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.wrap
+{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+
+@mixin placeholder($color){
+    
+    &::placeholder{
+        color: $color;
+    }
+    
+    &:-ms-input-placeholder{
+        color: $color;
+    }
+    
+    &::-ms-input-placeholder{
+        color: $color;
+    }
+}
+
+
+input{
+        @include placeholder(white);
+    }
+
+p.form-title
+{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 1%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+p.form-subtitle
+{
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 5%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+form
+{
+    width: 250px;
+    margin: 0 auto;
+    
+}
+
+form.login input[type="text"], form.login input[type="password"]
+{
+    width: 100%;
+    margin: 0;
+    padding: 5px 10px;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    outline: 0;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    outline: 0;
+}
+
+form.login input[type="submit"]
+{
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 16px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+    
+form.login{
+    
+    label, a{
+    font-weight: 400;
+    color: #FFFFFF;
+    }
+    
+    .btn-sm:hover{
+        background-color: #fff;
+        color:#6f8b90;
+    }
+    
+    .btn-login{
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color .5s;
+        &:hover{
+            background-color: #fff;
+            text-decoration: none;
+        }
+    }
+    
+}
