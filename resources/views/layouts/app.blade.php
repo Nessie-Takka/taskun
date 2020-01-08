@@ -27,7 +27,7 @@
             <ul class="header_menu">
                 <li class="nav-link nav-link-user">User : {{ Auth::user()->name}}</li>
                 <li class="header_menu_title mes">
-                    <a href="/" class="nav-link listNew">TASKUN
+                    <a href="/" class="nav-link">TASKUN
                         <span class="remark">リスト一覧へ戻る</span>
                     </a>
                     

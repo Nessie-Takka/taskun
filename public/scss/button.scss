@@ -1,13 +1,26 @@
-.submitBtn {
-  background: #29b744;
+.submitBtn, .delete_btn, .edit_btn{
+  display: inline-box;
+  font-size: 16px;
   color: #fff;
-  width: 200px;
-  margin: 20px 0 20px;
-  padding: 10px;
-  border-radius: 90px;
+  max-width: 200px;
+  margin: 20px auto;
+  padding: 5px 30px;
+  border-radius: 8px;
   transition: opacity .5s;
   cursor: pointer;
   &:hover {
     opacity: .6;
   }
+}
+
+.submitBtn{
+    background-color: #29b744;
+}
+.delete_btn{
+    background-color: #df164a;
+}
+
+&.edit_btn {
+   background-color: #026aa7;
+
 }
